@@ -60,7 +60,7 @@ function DrawerFunction() {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      offset={-50}
+                      offset={-60}
                     >
                       About Me
                     </ScrollLink>
@@ -74,7 +74,7 @@ function DrawerFunction() {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      offset={-50}
+                      offset={-60}
                     >
                       Projects
                     </ScrollLink>
@@ -88,7 +88,7 @@ function DrawerFunction() {
                       spy={true}
                       smooth={true}
                       duration={500}
-                      // offset={-50}
+                      offset={-60}
                     >
                       Technologies
                     </ScrollLink>

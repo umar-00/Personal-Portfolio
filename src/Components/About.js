@@ -90,7 +90,7 @@ const About = () => {
             color="white"
           >
             <FaFileDownload style={{ marginRight: "5px", marginTop: "1px" }} />
-            {" Download CV"}
+            {" Download Resume"}
           </Link>
         </Button>
       </HStack>

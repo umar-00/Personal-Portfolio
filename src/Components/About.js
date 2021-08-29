@@ -9,6 +9,7 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
+import { FaFileDownload } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -45,23 +46,55 @@ const About = () => {
         libraries.
       </Text>
 
-      <Link
-        href="mailto:umarshakeel002@gmail.com"
-        _hover="textDecoration: none"
-        display="block"
-        mt="5"
-      >
+      <HStack spacing="10px">
         <Button
-          backgroundColor="#FF6666"
-          // backgroundColor="#FF715B"
-          mb="5"
-          variant="solid"
-          borderRadius="10px"
+          display="block"
+          mt="6"
+          mb="6"
+          _hover="backgroundColor: none"
+          p="0"
         >
-          <AiFillMail style={{ marginRight: "5px", marginTop: "1px" }} />
-          {" Email Me"}
+          <Link
+            href="mailto:umarshakeel002@gmail.com"
+            _hover="textDecoration: none"
+            display="flex"
+            // border="2px"
+            backgroundColor="#FF6666"
+            variant="solid"
+            borderRadius="10px"
+            p="3"
+          >
+            <AiFillMail style={{ marginRight: "5px", marginTop: "1px" }} />
+            {" Email Me"}
+          </Link>
         </Button>
-      </Link>
+
+        <Button
+          display="block"
+          mt="6"
+          mb="6"
+          _hover="backgroundColor: none"
+          p="0"
+        >
+          <Link
+            href="https://umar-00.github.io/"
+            _hover="textDecoration: none"
+            display="flex"
+            isExternal
+            // border="2px"
+            // backgroundColor="#893AE4"
+            backgroundColor="#031D44"
+            variant="solid"
+            borderRadius="10px"
+            p="3"
+            color="white"
+          >
+            <FaFileDownload style={{ marginRight: "5px", marginTop: "1px" }} />
+            {" Download CV"}
+          </Link>
+        </Button>
+      </HStack>
+
       <HStack display={{ base: "block", md: "none" }} spacing="10px">
         <Link href="https://github.com/umar-00" isExternal>
           <AiFillGithub size={40} style={{ display: "inline" }} />

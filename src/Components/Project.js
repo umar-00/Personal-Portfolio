@@ -1,16 +1,12 @@
 import React from "react";
 import {
   Box,
-  Stack,
   Flex,
   Heading,
   Image,
   Text,
   Button,
   Divider,
-  Wrap,
-  WrapItem,
-  Center,
   Link,
 } from "@chakra-ui/react";
 
@@ -42,8 +38,14 @@ const Project = ({
 
       //   backgroundColor="#EDF2F7"
     >
-      <Image src={imageSrc} />
-      <Heading pt="3" pb="4" w="80%" fontSize="xl">
+      <Box overflow="hidden">
+        <Image
+          src={imageSrc}
+          _hover={{ transform: "scale(1.1)" }}
+          style={{ transition: ".3s ease-in-out" }}
+        />
+      </Box>
+      <Heading pt="4" pb="4" w="80%" fontSize="xl">
         {headingText}
       </Heading>
       <Divider w="90%" />

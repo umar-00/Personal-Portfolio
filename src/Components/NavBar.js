@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-duplicate-props */
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
   Flex,
@@ -10,32 +10,13 @@ import {
   BreadcrumbLink,
   Link,
   Stack,
-  Fade,
-  ScaleFade,
-  Slide,
-  SlideFade,
-  useDisclosure,
-  Button,
-  Lorem,
 } from "@chakra-ui/react";
-import { Sling as Hamburger } from "hamburger-react";
-// import { FaPager } from "react-icons/fa";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
-import MenuModal from "./MenuModal";
 import DrawerFunction from "./DrawerFunction";
-import {
-  Link as ScrollLink,
-  Element,
-  animateScroll as scroll,
-} from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 
 const NavBar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { isOpen, onToggle } = useDisclosure();
-
-  //console.log(isOpen);
-
   return (
     <Flex
       backgroundColor="#EDF2F7"
@@ -54,48 +35,52 @@ const NavBar = () => {
         Portfolio
       </Text>
       <Spacer />
+
       <Box display={{ md: "none" }}>
-        {/* <Hamburger
-          toggled={isMenuOpen}
-          toggle={setIsMenuOpen}
-          onToggle={(toggled) => {
-            if (toggled) {
-              onToggle();
-            } else {
-              onToggle();
-            }
-          }}
-          rounded
-          hideOutline={false}
-          size={25}
-        /> */}
-        {/* <Button onClick={onToggle}>Menu</Button> */}
-
-        {/* <MenuModal isOpen={isOpen} /> */}
-
         <DrawerFunction />
-
-        {/* {isOpen && (
-          <SlideFade in={isOpen} offsetY="20px">
-            <Box>
-              <MenuModal />
-            </Box>
-          </SlideFade>
-        )} */}
       </Box>
+
       <Box display={{ base: "none", md: "block" }}>
-        <Breadcrumb fontSize="1xl" display="block" separator="">
+        <Breadcrumb fontSize="1xl" display="block" separator="" fontSize="xl">
           <BreadcrumbItem>
-            <BreadcrumbLink>Things</BreadcrumbLink>
+            <BreadcrumbLink>
+              <ScrollLink
+                // activeClass="active"
+                // className="test1"
+                to="about_me"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={-50}
+              >
+                About Me
+              </ScrollLink>
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink>Projects</BreadcrumbLink>
+            <BreadcrumbLink>
+              <ScrollLink
+                to="project_section"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                Projects
+              </ScrollLink>
+            </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Technologies</BreadcrumbLink>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <BreadcrumbLink href="#">Contact Me</BreadcrumbLink>
+            <BreadcrumbLink>
+              <ScrollLink
+                to="technologies"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Technologies
+              </ScrollLink>
+            </BreadcrumbLink>
           </BreadcrumbItem>
         </Breadcrumb>
       </Box>
@@ -106,10 +91,21 @@ const NavBar = () => {
         direction="row"
         spacing="30px"
       >
-        <Link href="https://github.com/umar-00" isExternal>
+        <Link
+          href="https://github.com/umar-00"
+          isExternal
+          _hover={{
+            color: "teal.500",
+          }}
+          // color="blue"
+        >
           <AiFillGithub size={40} />
         </Link>
-        <Link>
+        <Link
+          _hover={{
+            color: "teal.500",
+          }}
+        >
           <AiFillLinkedin size={40} />
         </Link>
       </Stack>

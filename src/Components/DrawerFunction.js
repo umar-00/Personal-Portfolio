@@ -1,21 +1,19 @@
-import React, { useRef } from "react";
+import React from "react";
 import {
   Drawer,
   Box,
   DrawerBody,
   DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
-  Button,
-  Input,
   IconButton,
   UnorderedList,
   ListItem,
   Link,
 } from "@chakra-ui/react";
+import { Link as ScrollLink } from "react-scroll";
 
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -26,6 +24,7 @@ function DrawerFunction() {
   return (
     <>
       <IconButton
+        _focus="outline: none"
         aria-label="Open Menu"
         size="lg"
         mr={2}
@@ -52,16 +51,48 @@ function DrawerFunction() {
                 ml="0"
               >
                 <ListItem pb="20px">
-                  <Link>About Me</Link>
+                  <Link>
+                    <ScrollLink
+                      onClick={onClose}
+                      // activeClass="active"
+                      // className="test1"
+                      to="about_me"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-50}
+                    >
+                      About Me
+                    </ScrollLink>
+                  </Link>
                 </ListItem>
                 <ListItem pb="20px">
-                  <Link>Projects</Link>
+                  <Link>
+                    <ScrollLink
+                      onClick={onClose}
+                      to="project_section"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      offset={-50}
+                    >
+                      Projects
+                    </ScrollLink>
+                  </Link>
                 </ListItem>
                 <ListItem pb="20px">
-                  <Link>Technologies</Link>
-                </ListItem>
-                <ListItem pb="20px">
-                  <Link>Contact Me</Link>
+                  <Link>
+                    <ScrollLink
+                      onClick={onClose}
+                      to="technologies"
+                      spy={true}
+                      smooth={true}
+                      duration={500}
+                      // offset={-50}
+                    >
+                      Technologies
+                    </ScrollLink>
+                  </Link>
                 </ListItem>
               </UnorderedList>
             </Box>

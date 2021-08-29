@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   Heading,
-  Image,
   Text,
   Tabs,
   TabList,
@@ -12,10 +11,6 @@ import {
   TabPanel,
   Tag,
   TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  TagCloseButton,
-  Avatar,
 } from "@chakra-ui/react";
 
 // Icons
@@ -30,9 +25,10 @@ import {
   SiGnubash,
   SiFirebase,
   SiTailwindcss,
+  SiBootstrap,
 } from "react-icons/si";
 import { BsFillLightningFill } from "react-icons/bs";
-import { AiOutlineCloudServer } from "react-icons/ai";
+// import { AiOutlineCloudServer } from "react-icons/ai";
 
 const Technologies = () => {
   return (
@@ -70,9 +66,13 @@ const Technologies = () => {
               <Flex flexWrap="wrap" justifyContent="space-around">
                 <Tag
                   variant="outline"
+                  // variant="custom-tag-color"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
+                  // color="gray.700"
                   borderRadius="0px"
+                  // fontWeight="bold"
                   m="2"
                   p="2"
                 >
@@ -85,6 +85,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -98,6 +99,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -111,6 +113,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -124,6 +127,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -137,6 +141,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -150,6 +155,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -170,6 +176,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -183,6 +190,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -196,6 +204,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -209,6 +218,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -216,6 +226,20 @@ const Technologies = () => {
                   <SiTailwindcss size={30} />
                   <TagLabel ml="1" fontSize="lg">
                     TailWind CSS
+                  </TagLabel>
+                </Tag>
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  <SiBootstrap size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    Bootstrap
                   </TagLabel>
                 </Tag>
               </Flex>
@@ -229,6 +253,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -242,6 +267,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"
@@ -255,6 +281,7 @@ const Technologies = () => {
                   variant="outline"
                   size="lg"
                   colorScheme="gray"
+                  color="gray.700"
                   borderRadius="0px"
                   m="2"
                   p="2"

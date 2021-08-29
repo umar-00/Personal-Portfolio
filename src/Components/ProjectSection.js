@@ -1,21 +1,12 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  Heading,
-  Text,
-  Badge,
-  Center,
-  Wrap,
-  WrapItem,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, Badge, Link } from "@chakra-ui/react";
 import Project from "./Project";
 
 // Images and icons
 import movieWebsiteImage from "../Images/movieWebsite.png";
 import disasterTrackerWebsiteImage from "../Images/disasterTrackerWebsite.png";
 import twitterCloneWebsiteImage from "../Images/twitterCloneWebsite.png";
+import redditSearchWebsiteImage from "../Images/redditSearchWebsite.png";
 import { AiFillGithub } from "react-icons/ai";
 
 const Projects = () => {
@@ -235,6 +226,59 @@ const Projects = () => {
               m="2"
             >
               Google Maps JavaScript API
+            </Badge>
+          }
+        />
+
+        <Project
+          headingText={"Reddit Search"}
+          websiteUrl={"https://js-reddit-search.netlify.app/"}
+          imageSrc={redditSearchWebsiteImage}
+          text={
+            "Vanilla JavaScript used for searching and displaying Reddit posts by requesting Reddit API for results. Made using:"
+          }
+          badge1={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              JavaScript
+            </Badge>
+          }
+          badge2={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Reddit API
+            </Badge>
+          }
+          badge3={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Bootstrap
+            </Badge>
+          }
+          badge4={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              HTML
             </Badge>
           }
         />

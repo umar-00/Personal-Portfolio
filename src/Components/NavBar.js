@@ -19,10 +19,16 @@ import {
   Lorem,
 } from "@chakra-ui/react";
 import { Sling as Hamburger } from "hamburger-react";
-import { FaPager } from "react-icons/fa";
+// import { FaPager } from "react-icons/fa";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { DiCssdeck } from "react-icons/di";
 import MenuModal from "./MenuModal";
+import DrawerFunction from "./DrawerFunction";
+import {
+  Link as ScrollLink,
+  Element,
+  animateScroll as scroll,
+} from "react-scroll";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -65,7 +71,10 @@ const NavBar = () => {
         /> */}
         {/* <Button onClick={onToggle}>Menu</Button> */}
 
-        <MenuModal isOpen={isOpen} />
+        {/* <MenuModal isOpen={isOpen} /> */}
+
+        <DrawerFunction />
+
         {/* {isOpen && (
           <SlideFade in={isOpen} offsetY="20px">
             <Box>
@@ -77,10 +86,10 @@ const NavBar = () => {
       <Box display={{ base: "none", md: "block" }}>
         <Breadcrumb fontSize="1xl" display="block" separator="">
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">About</BreadcrumbLink>
+            <BreadcrumbLink>Things</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
-            <BreadcrumbLink href="#">Projects</BreadcrumbLink>
+            <BreadcrumbLink>Projects</BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbItem>
             <BreadcrumbLink href="#">Technologies</BreadcrumbLink>

@@ -15,8 +15,10 @@ import {
 
 const MenuModal = ({ isOpen }) => {
   const [showA, setShowA] = useState(false);
+  const [display, setDisplay] = useState(false); //perhaps use two states, then use timeout on close state
   //   const { menuIsOpen, onToggle } = useDisclosure();
-  console.log(showA);
+  console.log("showA: ", showA);
+  console.log("display: ", display);
 
   const fadeStyles = useSpring({
     config: { ...config.stiff },
@@ -26,22 +28,25 @@ const MenuModal = ({ isOpen }) => {
     },
   });
 
-  // Perhaps use timeout function on setting the state for "closed" a little late. ANd use // regular "showA && <whatever>" syntax
+  // Perhaps use timeout function on setting the state for "closed" a little late. And use // regular "showA && <whatever>" syntax
 
   return (
     <div>
       {/* <button onClick={() => setShowA((val) => !val)}>Toggle</button> */}
-      <Hamburger
-        toggled={showA}
-        toggle={setShowA}
-        rounded
-        hideOutline={false}
-        size={25}
-      />
-      {/* {showA && ( */}
+      <div onClick={() => setTimeout(() => setDisplay(!display), 300)}>
+        <Hamburger
+          toggled={showA}
+          toggle={setShowA}
+          // toggle={() => setTimeout(setShowA, 1000)}
+          rounded
+          hideOutline={false}
+          size={25}
+        />
+      </div>
+
       <animated.div style={fadeStyles}>
         {/* <Portal> */}
-
+        {/* {display && ( */}
         <Flex
           m="auto"
           h="calc(100vh)"
@@ -55,7 +60,7 @@ const MenuModal = ({ isOpen }) => {
           align="center"
           justify="center"
         >
-          {showA && (
+          {display && (
             <UnorderedList
               listStyleType="none"
               textAlign="center"
@@ -100,25 +105,25 @@ const MenuModal = ({ isOpen }) => {
   //     align="center"
   //     justify="center"
   //   >
-  //     <UnorderedList
-  //       listStyleType="none"
-  //       textAlign="center"
-  //       fontSize="4xl"
-  //       ml="0"
-  //     >
-  //       <ListItem pb="20px">
-  //         <Link>About</Link>
-  //       </ListItem>
-  //       <ListItem pb="20px">
-  //         <Link>Projects</Link>
-  //       </ListItem>
-  //       <ListItem pb="20px">
-  //         <Link>Technologies</Link>
-  //       </ListItem>
-  //       <ListItem pb="20px">
-  //         <Link>Contact Me</Link>
-  //       </ListItem>
-  //     </UnorderedList>
+  // <UnorderedList
+  //   listStyleType="none"
+  //   textAlign="center"
+  //   fontSize="4xl"
+  //   ml="0"
+  // >
+  //   <ListItem pb="20px">
+  //     <Link>About</Link>
+  //   </ListItem>
+  //   <ListItem pb="20px">
+  //     <Link>Projects</Link>
+  //   </ListItem>
+  //   <ListItem pb="20px">
+  //     <Link>Technologies</Link>
+  //   </ListItem>
+  //   <ListItem pb="20px">
+  //     <Link>Contact Me</Link>
+  //   </ListItem>
+  // </UnorderedList>
   //   </Flex>
   // </Portal>
   //     </animated.div>

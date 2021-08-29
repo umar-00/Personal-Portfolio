@@ -8,7 +8,11 @@ const Footer = () => {
         This app was made using React.js and Chakra UI. To view the GitHub
         repository for this website,
       </Text>
-      <Link to="https://github.com/umar-00/Personal-Portfolio" color="teal">
+      <Link
+        href="https://github.com/umar-00/Personal-Portfolio"
+        color="teal"
+        isExternal
+      >
         {"click here."}
       </Link>
     </Box>

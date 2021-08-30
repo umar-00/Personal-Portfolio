@@ -182,7 +182,7 @@ const Projects = () => {
           websiteUrl={"https://disaster-tracker-reactjs.netlify.app/"}
           imageSrc={disasterTrackerWebsiteImage}
           text={
-            "Powered by EONET API from NASA. Responsive website that accurately renders real-time natural disaster events (wildfires, storms and active volcanoes) on world map provided by Google Map. Made using:"
+            "Powered by EONET API from NASA. Responsive website that accurately renders real-time natural disaster events (wildfires, storms and active volcanoes) on world map provided by Google Map. Clicking on an event marker pops up a modal box containing more information about the disaster. Made using:"
           }
           badge1={
             <Badge

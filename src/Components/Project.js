@@ -21,6 +21,7 @@ const Project = ({
   badge4,
   badge5,
   badge6,
+  badge7,
 }) => {
   return (
     <Flex

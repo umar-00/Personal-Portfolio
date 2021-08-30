@@ -175,6 +175,17 @@ const Projects = () => {
               TailWind CSS
             </Badge>
           }
+          badge7={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Material UI
+            </Badge>
+          }
         />
 
         <Project

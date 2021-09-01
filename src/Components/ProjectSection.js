@@ -39,75 +39,11 @@ const Projects = () => {
         justifyContent="space-around"
       >
         <Project
-          headingText={"React Movie Database Website"}
-          imageSrc={movieWebsiteImage}
-          websiteUrl={"https://reactjs-movie-website.netlify.app/"}
-          text={
-            "Fully responsive website that renders a huge database of movies. The homepage features the current most popular movies and a search functionality to search any movie. Each movie element is clickable and displays movie information and a list of its actors. Made using:"
-          }
-          badge1={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              ReactJS
-            </Badge>
-          }
-          badge2={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              REST API
-            </Badge>
-          }
-          badge3={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              Fetch API
-            </Badge>
-          }
-          badge4={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              React Router
-            </Badge>
-          }
-          badge5={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              Styled Components
-            </Badge>
-          }
-        />
-
-        <Project
           headingText={"Twitter Clone"}
           websiteUrl={"https://twitter-clone-react-js.web.app/"}
           imageSrc={twitterCloneWebsiteImage}
           text={
-            "Twitter Clone with the functionality to sign-up/log-in using Google Authentication. Each logged-in user has a unique profile, which can be used to send new Tweets and to view other user's Tweets. Tweets are sent and retrieved from a Google Firebase server in real time. Made using:"
+            "Twitter Clone with the functionality to sign-up/log-in either using a personal email address/password, or through Google Authentication. Each logged-in user has a unique profile, and they can change the profile's Display Name and Profile Photo after making an account. Users can send new Tweets from their account with the option to attach a photo, and they can browse all tweets sent by other users on the website. Tweets are sent and retrieved from a Google Firebase server in real time. Made using:"
           }
           badge1={
             <Badge
@@ -184,6 +120,70 @@ const Projects = () => {
               m="2"
             >
               Material UI
+            </Badge>
+          }
+        />
+
+        <Project
+          headingText={"React Movie Database Website"}
+          imageSrc={movieWebsiteImage}
+          websiteUrl={"https://reactjs-movie-website.netlify.app/"}
+          text={
+            "Fully responsive website that renders a huge database of movies. The homepage features the current most popular movies and a search functionality to search any movie. Each movie element is clickable and displays movie information and a list of its actors. Made using:"
+          }
+          badge1={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              ReactJS
+            </Badge>
+          }
+          badge2={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              REST API
+            </Badge>
+          }
+          badge3={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Fetch API
+            </Badge>
+          }
+          badge4={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              React Router
+            </Badge>
+          }
+          badge5={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Styled Components
             </Badge>
           }
         />

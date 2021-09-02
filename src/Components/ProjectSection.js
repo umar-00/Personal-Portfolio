@@ -16,8 +16,8 @@ const Projects = () => {
         Projects
       </Heading>
       <Text pb="10" fontSize="1.25rem" color="gray.600">
-        These are some projects I have worked on recently. You can also find
-        them at my{" "}
+        Here are some projects I have worked on recently. You can also find them
+        at my{" "}
         <Link
           color="#319795"
           href="https://github.com/umar-00"
@@ -43,7 +43,7 @@ const Projects = () => {
           websiteUrl={"https://twitter-clone-react-js.web.app/"}
           imageSrc={twitterCloneWebsiteImage}
           text={
-            "Twitter Clone with the functionality to sign-up/log-in either using a personal email address/password, or through Google Authentication. Each logged-in user has a unique profile, and they can change the profile's Display Name and Profile Photo after making an account. Users can send new Tweets from their account with the option to attach a photo, and they can browse all tweets sent by other users on the website. Tweets are sent and retrieved from a Google Firebase server in real time. Made using:"
+            "Twitter Clone where Users can sign‑up/log‑in through personal Email or Google’s Sign‑in functionality. Each logged‑in user has a unique profile, the ability to change their Display Name and Profile Photo, and the ability to send new Tweets (optionally with pictures) that are visible to every other user. Tweets are sent and retrieved from a Google Firebase server in real time. Made using:"
           }
           badge1={
             <Badge

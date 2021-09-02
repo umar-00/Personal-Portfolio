@@ -106,6 +106,8 @@ const NavBar = () => {
           _hover={{
             color: "teal.500",
           }}
+          href="https://www.linkedin.com/in/umar-00"
+          isExternal
         >
           <AiFillLinkedin size={40} />
         </Link>

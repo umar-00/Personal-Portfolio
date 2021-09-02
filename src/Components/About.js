@@ -30,7 +30,7 @@ const About = () => {
               src={resumePicture}
               borderRadius="full"
               boxSize="180px"
-              alt="Umar's resume image"
+              marginBottom="15px"
             ></Image>
           </Center>
           <Heading pb="3" fontSize="2.25rem">

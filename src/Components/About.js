@@ -133,7 +133,7 @@ const About = () => {
         <Link href="https://github.com/umar-00" isExternal>
           <AiFillGithub size={40} style={{ display: "inline" }} />
         </Link>
-        <Link href="https://www.linkedin.com/in/umar-00">
+        <Link href="https://www.linkedin.com/in/umar-00" isExternal>
           <AiFillLinkedin size={40} style={{ display: "inline" }} />
         </Link>
       </HStack>

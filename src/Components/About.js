@@ -126,7 +126,6 @@ const About = () => {
           src={resumePicture}
           borderRadius="full"
           boxSize="250px"
-          alt="Umar's resume image"
         ></Image>
       </Flex>
 

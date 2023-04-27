@@ -13,8 +13,10 @@ import {
   TagLabel,
 } from "@chakra-ui/react";
 
+// Svg components
 import RxJsSvg from '../Images/SVGComponents/RxJsSvg.js';
 import NgRxSvg from '../Images/SVGComponents/NgRxSvg.js';
+import SignalRSvg from "../Images/SVGComponents/SignalRSvg.js";
 
 // Icons
 import { FaReact, FaHtml5, FaGithub, FaServer, FaAngular, FaMap } from "react-icons/fa";
@@ -30,7 +32,8 @@ import {
   SiBootstrap,
   SiSupabase,
   SiPostgresql,
-  SiMaterialdesign
+  SiMaterialdesign,
+  SiDotnet
 } from "react-icons/si";
 import { BsFillLightningFill } from "react-icons/bs";
 
@@ -127,10 +130,39 @@ const Technologies = () => {
                   m="2"
                   p="2"
                 >
-                  {/* <img id="rxjs-svg" /> */}
                   <RxJsSvg />
                   <TagLabel ml="1" fontSize="lg">
                     RxJs
+                  </TagLabel>
+                </Tag>
+
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  <SiDotnet size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    .NET Core
+                  </TagLabel>
+                </Tag>
+
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  <SignalRSvg />
+                  <TagLabel ml="1" fontSize="lg">
+                    SignalR
                   </TagLabel>
                 </Tag>
 

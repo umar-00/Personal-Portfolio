@@ -16,8 +16,7 @@ const Projects = () => {
         Projects
       </Heading>
       <Text pb="10" fontSize="1.25rem" color="gray.600">
-        Here are some projects I have worked on recently. You can also find them
-        at my{" "}
+        Here are some projects I have worked on recently. You can also find them at my{" "}
         <Link
           color="#319795"
           href="https://github.com/umar-00"
@@ -27,17 +26,10 @@ const Projects = () => {
           _focus="outline: 0"
         >
           {" GitHub link "}
-          <AiFillGithub
-            size={24}
-            style={{ display: "inline", marginBottom: "6px" }}
-          ></AiFillGithub>
+          <AiFillGithub size={24} style={{ display: "inline", marginBottom: "6px" }}></AiFillGithub>
         </Link>
       </Text>
-      <Flex
-        flexDirection={{ base: "column", md: "row" }}
-        flexWrap="wrap"
-        justifyContent="space-around"
-      >
+      <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap" justifyContent="space-around">
         <Project
           headingText={"Twitter Clone"}
           websiteUrl={"https://twitter-clone-react-js.web.app/"}
@@ -46,85 +38,43 @@ const Projects = () => {
             "Twitter Clone where Users can sign‑up/log‑in through personal Email or Google’s Sign‑in functionality. Each logged‑in user has a unique profile, the ability to change their Display Name and Profile Photo, and the ability to send new Tweets (optionally with pictures) that are visible to every other user. Tweets are sent and retrieved from a Google Firebase server in real time. Made using:"
           }
           badge1={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               ReactJS
             </Badge>
           }
           badge2={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Google Firebase
             </Badge>
           }
           badge3={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Redux
             </Badge>
           }
           badge4={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Redux-Persist
             </Badge>
           }
           badge5={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               React Router
             </Badge>
           }
           badge6={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               TailWind CSS
             </Badge>
           }
           badge7={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Material UI
             </Badge>
           }
         />
 
-        <Project
+        {/* <Project
           headingText={"React Movie Database Website"}
           imageSrc={movieWebsiteImage}
           websiteUrl={"https://reactjs-movie-website.netlify.app/"}
@@ -186,7 +136,7 @@ const Projects = () => {
               Styled Components
             </Badge>
           }
-        />
+        /> */}
 
         <Project
           headingText={"Disaster Event Tracker"}
@@ -196,46 +146,22 @@ const Projects = () => {
             "Powered by EONET API from NASA. Responsive website that accurately renders real-time natural disaster events (wildfires, storms and active volcanoes) on world map provided by Google Map. Clicking on an event marker pops up a modal box containing more information about the disaster. Made using:"
           }
           badge1={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               ReactJS
             </Badge>
           }
           badge2={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               REST API
             </Badge>
           }
           badge3={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Fetch API
             </Badge>
           }
           badge4={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Google Maps JavaScript API
             </Badge>
           }
@@ -249,46 +175,22 @@ const Projects = () => {
             "Vanilla JavaScript used for searching and displaying Reddit posts by requesting Reddit API for results. Made using:"
           }
           badge1={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               JavaScript
             </Badge>
           }
           badge2={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Reddit API
             </Badge>
           }
           badge3={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               Bootstrap
             </Badge>
           }
           badge4={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
+            <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
               HTML
             </Badge>
           }

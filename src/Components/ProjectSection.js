@@ -34,7 +34,7 @@ const Projects = () => {
         <Project
           headingText={"CharityMeet"}
           imageSrc={charityMeetImage}
-          websiteUrl={"https://umar-charity-meet-phase2.netlify.app"}
+          websiteUrl={"https://charity-meet.netlify.app/volunteer-dashboard"}
           text={
             "Personal full-stack project made using React, Supabase and PostgreSQL. Using Google Maps API and Places API, users can search for charity events near a given address, and charity organisations can post events. Technologies used:"
           }

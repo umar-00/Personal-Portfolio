@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text, Badge, Link } from "@chakra-ui/react";
 import Project from "./Project";
 
 // Images and icons
-// import movieWebsiteImage from "../Images/movieWebsite.png";
+import charityMeetImage from "../Images/charityMeet.png";
 import disasterTrackerWebsiteImage from "../Images/disasterTrackerWebsite.png";
 import twitterCloneWebsiteImage from "../Images/twitterCloneWebsite.png";
 import redditSearchWebsiteImage from "../Images/redditSearchWebsite.png";
@@ -30,6 +30,93 @@ const Projects = () => {
         </Link>
       </Text>
       <Flex flexDirection={{ base: "column", md: "row" }} flexWrap="wrap" justifyContent="space-around">
+
+        <Project
+          headingText={"CharityMeet"}
+          imageSrc={charityMeetImage}
+          websiteUrl={"https://umar-charity-meet-phase2.netlify.app"}
+          text={
+            "Personal full-stack project made using React, Supabase and PostgreSQL. Using Google Maps API and Places API, users can search for charity events near a given address, and charity organisations can post events. Technologies used in making:"
+          }
+          badge1={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              React
+            </Badge>
+          }
+          badge2={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Zustand
+            </Badge>
+          }
+          badge3={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Supabase
+            </Badge>
+          }
+          badge4={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              React Router
+            </Badge>
+          }
+          badge5={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Material UI
+            </Badge>
+          }
+          badge6={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              Google Maps API
+            </Badge>
+          }
+          badge7={
+            <Badge
+              colorScheme="gray"
+              fontSize="1rem"
+              p="2"
+              variant="outline"
+              m="2"
+            >
+              PostgreSQL
+            </Badge>
+          }
+        />
+
         <Project
           headingText={"Twitter Clone"}
           websiteUrl={"https://twitter-clone-react-js.web.app/"}
@@ -39,7 +126,7 @@ const Projects = () => {
           }
           badge1={
             <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
-              ReactJS
+              React
             </Badge>
           }
           badge2={
@@ -74,70 +161,6 @@ const Projects = () => {
           }
         />
 
-        {/* <Project
-          headingText={"React Movie Database Website"}
-          imageSrc={movieWebsiteImage}
-          websiteUrl={"https://reactjs-movie-website.netlify.app/"}
-          text={
-            "Fully responsive website that renders a huge database of movies. The homepage features the current most popular movies and a search functionality to search any movie. Each movie element is clickable and displays movie information and a list of its actors. Made using:"
-          }
-          badge1={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              ReactJS
-            </Badge>
-          }
-          badge2={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              REST API
-            </Badge>
-          }
-          badge3={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              Fetch API
-            </Badge>
-          }
-          badge4={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              React Router
-            </Badge>
-          }
-          badge5={
-            <Badge
-              colorScheme="gray"
-              fontSize="1rem"
-              p="2"
-              variant="outline"
-              m="2"
-            >
-              Styled Components
-            </Badge>
-          }
-        /> */}
-
         <Project
           headingText={"Disaster Event Tracker"}
           websiteUrl={"https://disaster-tracker-reactjs.netlify.app/"}
@@ -162,7 +185,7 @@ const Projects = () => {
           }
           badge4={
             <Badge colorScheme="gray" fontSize="1rem" p="2" variant="outline" m="2">
-              Google Maps JavaScript API
+              Google Maps API
             </Badge>
           }
         />

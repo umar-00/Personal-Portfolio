@@ -37,7 +37,7 @@ const Project = ({
       overflow="hidden"
       maxWidth="800px"
 
-      //   backgroundColor="#EDF2F7"
+    //   backgroundColor="#EDF2F7"
     >
       <Box overflow="hidden">
         <Image
@@ -60,6 +60,7 @@ const Project = ({
         {badge4}
         {badge5}
         {badge6}
+        {badge7}
       </Flex>
       <Link href={websiteUrl} isExternal _hover="textDecoration: none">
         <Button

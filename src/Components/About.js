@@ -46,7 +46,7 @@ const About = () => {
               1.5+ years of experience
             </Text>{" "}
             working with Angular and I am motivated to learn any new technology that can help me become a better web
-            developer! HTML and CSS come natural to me, and I am also very skilled with JavaScript, Angular, React, UI
+            developer! HTML and CSS come natural to me, and I am also very skilled with JavaScript, Angular, React, RxJS, UI
             libraries and state management libraries such as NgRx, React-Redux and Zustand.
           </Text>
 

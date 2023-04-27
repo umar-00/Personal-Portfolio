@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Box,
-  Flex,
-  HStack,
-  Image,
-  Text,
-  Heading,
-  Button,
-  Link,
-  Tooltip,
-  Center,
-} from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Text, Heading, Button, Link, Tooltip, Center } from "@chakra-ui/react";
 import { AiFillGithub, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 import { FaFileDownload } from "react-icons/fa";
 import resumePicture from "../Images/resumePicture.jpg";
@@ -46,34 +35,23 @@ const About = () => {
           <Text fontSize="1rem" display="inline">
             {"I am currently a "}
           </Text>
-          <Tooltip
-            label="Bachelor BSc, 3rd Semester"
-            placement="top"
-            fontSize="lg"
-          >
+          <Tooltip label="Bachelor BSc" placement="top" fontSize="lg">
             <Text as="span" color="teal.500" fontSize="1rem">
               {"Computer Science student in Germany "}
             </Text>
           </Tooltip>
           <Text fontSize="1rem" display="inline">
-            {"who loves to do Front End Web Development! I am a "}
+            {"who loves to do Front End Web Development! I have "}
             <Text as="span" color="teal.500" fontWeight="bold">
-              fast learner
+              1.5+ years of experience
             </Text>{" "}
-            and I am motivated to learn any new technology that can help me
-            become a better web developer! HTML and CSS come natural to me, and
-            I am also very skilled with all the fundamentals of JavaScript,
-            ReactJS and its libraries.
+            working with Angular and I am motivated to learn any new technology that can help me become a better web
+            developer! HTML and CSS come natural to me, and I am also very skilled with JavaScript, Angular, React, UI
+            libraries and state management libraries such as NgRx, React-Redux and Zustand.
           </Text>
 
           <HStack spacing="10px">
-            <Button
-              display="block"
-              mt="6"
-              mb="6"
-              _hover="backgroundColor: none"
-              p="0"
-            >
+            <Button display="block" mt="6" mb="6" _hover="backgroundColor: none" p="0">
               <Link
                 href="mailto:umarshakeel002@gmail.com"
                 _hover="textDecoration: none"
@@ -89,13 +67,7 @@ const About = () => {
               </Link>
             </Button>
 
-            <Button
-              display="block"
-              mt="6"
-              mb="6"
-              _hover="backgroundColor: none"
-              p="0"
-            >
+            <Button display="block" mt="6" mb="6" _hover="backgroundColor: none" p="0">
               <Link
                 href="https://umar-00.github.io/"
                 _hover="textDecoration: none"
@@ -107,9 +79,7 @@ const About = () => {
                 p="3"
                 color="white"
               >
-                <FaFileDownload
-                  style={{ marginRight: "5px", marginTop: "1px" }}
-                />
+                <FaFileDownload style={{ marginRight: "5px", marginTop: "1px" }} />
                 {" Download Resume"}
               </Link>
             </Button>

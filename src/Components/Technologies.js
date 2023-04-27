@@ -33,7 +33,8 @@ import {
   SiSupabase,
   SiPostgresql,
   SiMaterialdesign,
-  SiDotnet
+  SiDotnet,
+  SiTypescript
 } from "react-icons/si";
 import { BsFillLightningFill } from "react-icons/bs";
 
@@ -175,11 +176,27 @@ const Technologies = () => {
                   m="2"
                   p="2"
                 >
+                  <SiTypescript size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    TypeScript
+                  </TagLabel>
+                </Tag>
+
+                  <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
                   <IoLogoJavascript size={30} />
                   <TagLabel ml="1" fontSize="lg">
                     JavaScript
                   </TagLabel>
                 </Tag>
+
                 <Tag
                   variant="outline"
                   size="lg"

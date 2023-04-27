@@ -41,6 +41,10 @@ const Technologies = () => {
         <Text as="span" color="#319795">
           JavaScript
         </Text>
+        {", "}
+        <Text as="span" color="#319795">
+          Angular
+        </Text>
         {" and "}
         <Text as="span" color="#319795">
           React.js

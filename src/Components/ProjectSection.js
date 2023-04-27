@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Text, Badge, Link } from "@chakra-ui/react";
 import Project from "./Project";
 
 // Images and icons
-import movieWebsiteImage from "../Images/movieWebsite.png";
+// import movieWebsiteImage from "../Images/movieWebsite.png";
 import disasterTrackerWebsiteImage from "../Images/disasterTrackerWebsite.png";
 import twitterCloneWebsiteImage from "../Images/twitterCloneWebsite.png";
 import redditSearchWebsiteImage from "../Images/redditSearchWebsite.png";

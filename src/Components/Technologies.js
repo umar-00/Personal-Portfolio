@@ -13,22 +13,26 @@ import {
   TagLabel,
 } from "@chakra-ui/react";
 
+import RxJsSvg from '../Images/SVGComponents/RxJsSvg.js';
+import NgRxSvg from '../Images/SVGComponents/NgRxSvg.js';
+
 // Icons
-import { FaReact, FaHtml5, FaGithub, FaServer } from "react-icons/fa";
+import { FaReact, FaHtml5, FaGithub, FaServer, FaAngular, FaMap } from "react-icons/fa";
 import { ImCss3 } from "react-icons/im";
 import { IoLogoJavascript } from "react-icons/io";
 import {
-  SiStyledComponents,
-  SiMaterialUi,
+  SiStyledcomponents,
   SiRedux,
   SiVisualstudiocode,
   SiGnubash,
   SiFirebase,
   SiTailwindcss,
   SiBootstrap,
+  SiSupabase,
+  SiPostgresql,
+  SiMaterialdesign
 } from "react-icons/si";
 import { BsFillLightningFill } from "react-icons/bs";
-// import { AiOutlineCloudServer } from "react-icons/ai";
 
 const Technologies = () => {
   return (
@@ -43,7 +47,7 @@ const Technologies = () => {
         </Text>
         {" and "}
         <Text as="span" color="#319795">
-          React.js
+          React
         </Text>
         {" libraries. Here are a few technologies that I am skilled in:"}
       </Text>
@@ -63,7 +67,7 @@ const Technologies = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              <Flex flexWrap="wrap" justifyContent="space-around">
+              <Flex flexWrap="wrap" justifyContent="center">
                 <Tag
                   variant="outline"
                   // variant="custom-tag-color"
@@ -104,6 +108,37 @@ const Technologies = () => {
                   m="2"
                   p="2"
                 >
+                  <FaAngular size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    Angular
+                  </TagLabel>
+                </Tag>
+
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  {/* <img id="rxjs-svg" /> */}
+                  <RxJsSvg />
+                  <TagLabel ml="1" fontSize="lg">
+                    RxJs
+                  </TagLabel>
+                </Tag>
+
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
                   <IoLogoJavascript size={30} />
                   <TagLabel ml="1" fontSize="lg">
                     JavaScript
@@ -120,7 +155,24 @@ const Technologies = () => {
                 >
                   <FaReact size={30} />
                   <TagLabel ml="1" fontSize="lg">
-                    React.js
+                    React
+                  </TagLabel>
+                </Tag>
+
+
+
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  <NgRxSvg />
+                  <TagLabel ml="1" fontSize="lg">
+                    NgRx
                   </TagLabel>
                 </Tag>
                 <Tag
@@ -160,9 +212,52 @@ const Technologies = () => {
                   m="2"
                   p="2"
                 >
+                  <SiSupabase size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    Supabase
+                  </TagLabel>
+                </Tag>
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  <SiPostgresql size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    PostgreSQL
+                  </TagLabel>
+                </Tag>
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
                   <SiFirebase size={30} />
                   <TagLabel ml="1" fontSize="lg">
                     Firebase
+                  </TagLabel>
+                </Tag>
+
+                <Tag
+                  variant="outline"
+                  size="lg"
+                  colorScheme="gray"
+                  color="gray.700"
+                  borderRadius="0px"
+                  m="2"
+                  p="2"
+                >
+                  <FaMap size={30} />
+                  <TagLabel ml="1" fontSize="lg">
+                    Google Maps API
                   </TagLabel>
                 </Tag>
               </Flex>
@@ -171,7 +266,7 @@ const Technologies = () => {
             {/* Second Tab Content */}
 
             <TabPanel>
-              <Flex flexWrap="wrap" justifyContent="space-around">
+              <Flex flexWrap="wrap" justifyContent="center" gridColumnGap={4}>
                 <Tag
                   variant="outline"
                   size="lg"
@@ -195,7 +290,7 @@ const Technologies = () => {
                   m="2"
                   p="2"
                 >
-                  <SiMaterialUi size={30} />
+                  <SiMaterialdesign size={30} />
                   <TagLabel ml="1" fontSize="lg">
                     Material UI
                   </TagLabel>
@@ -209,7 +304,7 @@ const Technologies = () => {
                   m="2"
                   p="2"
                 >
-                  <SiStyledComponents size={30} />
+                  <SiStyledcomponents size={30} />
                   <TagLabel ml="1" fontSize="lg">
                     {`Styled Components`}
                   </TagLabel>
@@ -248,7 +343,7 @@ const Technologies = () => {
             {/* Third Tab Content */}
 
             <TabPanel>
-              <Flex flexWrap="wrap" justifyContent="space-around">
+              <Flex flexWrap="wrap" justifyContent="center" gridColumnGap={12}>
                 <Tag
                   variant="outline"
                   size="lg"
